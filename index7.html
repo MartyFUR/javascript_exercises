@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vreau sa schimbati textul cu valoarea specifica din tag</h1>
+    <div> Generic </div>
+    <p>Generic</p>
+    <span>Generic</span>
+
+    <script>
+        var texte = {
+            p: 'text pentru paragraph',
+            div: 'text pentru div',
+            span: 'text pentru span'
+        }
+        
+        document.querySelector('div').innerText = texte.div;
+        document.querySelector('p').innerText = texte.p;
+        document.querySelector('span').innerText = texte.span;
+
+    </script>
+    
+</body>
+</html>

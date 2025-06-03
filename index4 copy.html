@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Luati culoarea din style si plasati o in background iar culoarea scrisului sa fie negru</h1>
+    <ol>
+        <li style="color:red">de schimbat</li>
+        <li style="color:green">de schimbat</li>
+        <li style="color:blue">de schimbat</li>
+    </ol>
+
+    <script>
+
+        var li_array =document.getElementsByTagName('li')
+        for (let i = 0; i < li_array.length; i++) {
+            const element = li_array[i];
+            element.style.backgroundColor = element.style.color;
+            element.style.color = 'black';
+            
+        }
+
+    </script>
+</body>
+</html>
